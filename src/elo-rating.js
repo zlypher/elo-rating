@@ -1,5 +1,4 @@
 // https://en.wikipedia.org/wiki/Elo_rating_system
-
 const EloRating = {
     k: 20,
 
