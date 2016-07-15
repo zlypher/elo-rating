@@ -1,7 +1,5 @@
 // https://en.wikipedia.org/wiki/Elo_rating_system
 const EloRating = {
-    k: 20,
-
     /**
      * Calculates the difference between two ratings.
      * The difference is capped at +400 and -400.
@@ -36,11 +34,12 @@ const EloRating = {
      * @param {number} playerRating Rating of player one.
      * @param {number} opponentRating Rating of player two.
      * @param {bool} playerWin Flag indicating if player one has won.
+     * @param {number} k K Factor. By default 20.
      * @return New rating of the player and his opponent.
      */
-    calculate(playerRating, opponentRating, playerWin = true) {
+    calculate(playerRating, opponentRating, playerWin = true, k = 20) {
         const playerExpected = this.expected(playerRating, opponentRating);
-        const ratingChange = parseInt(this.k * (!!playerWin - playerExpected), 10);
+        const ratingChange = parseInt(k * (!!playerWin - playerExpected), 10);
 
         return {
             playerRating: playerRating + ratingChange,
