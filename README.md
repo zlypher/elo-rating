@@ -10,8 +10,7 @@ npm install elo-rating
 
 # Usage
 
-TODO...
-```
+```javascript
 var EloRating = require('elo-rating');
 
 var playerWin = false;
