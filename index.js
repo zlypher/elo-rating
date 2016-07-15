@@ -1,1 +1,1 @@
-module.exports = require('./src/elo-rating');
+module.exports = require('./dist/elo-rating');
