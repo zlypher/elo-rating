@@ -1,4 +1,6 @@
-# elo-rating.js
+# [Archived] elo-rating.js
+
+ **⚠️ ATTENTION**: This project has been archived!
 
 elo-rating.js is a simple utility to calculate elo ratings for Node.js. See [https://en.wikipedia.org/wiki/Elo_rating_system](https://en.wikipedia.org/wiki/Elo_rating_system) for more information about elo rating.
 
